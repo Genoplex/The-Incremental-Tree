@@ -330,7 +330,10 @@ addLayer('Numerator',
             player.Numerator.Information_Gain_Mul  = player.Numerator.Information_Gain_Mul.mul(player.Numerator.Numerator_Upgrades[4][1].gte(1)
                                                                                                ?   player.Numerator.Numerator_Multi
                                                                                                :   1)
-            player.Numerator.Information_Gain_Mul  = player.Numerator.Information_Gain_Mul.mul(player.Infinity.Infinity_Upgrades[2][2])
+            if(player.Number.Stage>2)
+            {
+                player.Numerator.Information_Gain_Mul  = player.Numerator.Information_Gain_Mul.mul(player.Infinity.Infinity_Upgrades[2][2])
+            }
             player.Numerator.Information_Gain_Mul  = player.Numerator.Information_Gain_Mul.mul(player.Numerator.Numerator_Upgrades[7][1].gte(1)
                                                                                                ?   player.Denominator.Denominator_Multi
                                                                                                :   1)

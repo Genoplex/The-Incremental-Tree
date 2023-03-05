@@ -131,13 +131,13 @@ addLayer('Infinity',
         Next_Need              : new Decimal(0),
                                   // 0:PlaceHolder, 1.Level         2.Effect        3.Price         4.MaxLevel
         Infinity_Upgrades      : [0,[0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],   // 1
-                                    [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],   // 2
+                                    [0,             new Decimal(0), new Decimal(1), new Decimal(0), new Decimal(0)],   // 2
                                     [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
+                                    [0,             new Decimal(0), new Decimal(1), new Decimal(0), new Decimal(0)],
                                     [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
+                                    [0,             new Decimal(0), new Decimal(1), new Decimal(0), new Decimal(0)],
                                     [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
-                                    [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
-                                    [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
-                                    [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
+                                    [0,             new Decimal(0), new Decimal(1), new Decimal(0), new Decimal(0)],
                                     [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],
                                     [0,             new Decimal(0), new Decimal(0), new Decimal(0), new Decimal(0)],], // 10
 
