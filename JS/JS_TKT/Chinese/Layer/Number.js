@@ -356,7 +356,7 @@ function Change_Stage_Text(Stage)
         {
             var Title = '<h1>- Stage 3 -</h1>'
             var Lore  = '<h3><font style="color:gray"><i>———— ["This place is waiting to be filled in. (ThIsIsApLaCeHoLdEr)"]</i></font></h3>'
-            var Goal  = '<h2>Goal: Reach 16<sup>16<sup>1024</sup></sup> ≈ 10<sup>10<sup>1972.83</sup></sup>'
+            var Goal  = '<h2>Goal: Reach 16<sup>16×1024</sup> ≈ 10<sup>19728.3</sup></sup>'
             var Progress = '<h4><font style="color:gray">(By log10)</font></h4>'
             return Title + '<br><br>' + Lore + '<br><br>' + Goal + '<br><br>' + Progress
         }
@@ -394,7 +394,7 @@ function Text_Display_3()
         var Numerator_Number = new Decimal(player.Number.Numerator.div(new Decimal(10).pow(Numerator_Power)))
         player.Number.Numerator_Text = '<h1 style="font-size:40px">' + format(Numerator_Number) + '×10<sup>' + formatWhole(Numerator_Power) + '</sup></h1>'
     }
-    else player.Number.Numerator_Text = '<h1 style="font-size:40px">10<sup>10<sup>' + format(Numerator_Power.div(10)) + '</sup></sup>'
+    else player.Number.Numerator_Text = '<h1 style="font-size:40px">10<sup>10×' + format(Numerator_Power.div(10)) + '</sup>'
 
     var Denominator_Power = new Decimal(player.Number.Denominator.log(10))
     if(Denominator_Power.gt(-10))
@@ -403,7 +403,7 @@ function Text_Display_3()
         var Denominator_Number = new Decimal(player.Number.Denominator.mul(new Decimal(10).pow(Denominator_Power.mul(-1))))
         player.Number.Denominator_Text = '<h1 style="font-size:40px">' + format(Denominator_Number) + '×10<sup>' + formatWhole(Denominator_Power) + '</sup></h1>'
     }
-    else player.Number.Denominator_Text = '<h1 style="font-size:40px">10<sup>10<sup>' + format(Denominator_Power.div(10)) + '</sup></sup>'
+    else player.Number.Denominator_Text = '<h1 style="font-size:40px">10<sup>10×' + format(Denominator_Power.div(10)) + '</sup>'
 
     var Number_Power = new Decimal(player.Number.Number.log(10))
     if(Number_Power.lt(10))
@@ -412,5 +412,5 @@ function Text_Display_3()
         var Numerator_Number = new Decimal(player.Number.Numerator.div(new Decimal(10).pow(Numerator_Power)))
         player.Number.Number_Text = '<h1 style="font-size:40px">' + format(Numerator_Number) + '×10<sup>' + formatWhole(Numerator_Power) + '</sup></h1>'
     }
-    else player.Number.Number_Text = '<h1 style="font-size:40px">10<sup>10<sup>' + format(Number_Power.div(10)) + '</sup></sup>'
+    else player.Number.Number_Text = '<h1 style="font-size:40px">10<sup>10×' + format(Number_Power.div(10)) + '</sup>'
 }
